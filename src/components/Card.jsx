@@ -3,21 +3,30 @@ import languages from "../data/languages"
 
 function CardFaq() {
     const [title, setTitle] = useState(null)
-
+    let currentElement = languages.find(language => language.id === title)
     return (
       <>
       {
         languages.map((language)=> (
             
-            <div key={language.id}>
-                <button onClick={()=> setTitle(language.id)} className="btn">
+            
+                <button onClick={() => setTitle(language.id)} className="btn" key={language.id}>
                     {language.title}
                 </button>
-            </div>
+            
         ))
       } 
             <div>
-                {title === language.id && (<p>{language.description}</p>)}
+               <h2>
+                {
+                    currentElement ? currentElement.title : ""
+                }
+               </h2>
+               <p>
+                {
+                    currentElement ? currentElement.description : ""
+                }
+               </p>
             </div>
      </>
     )
