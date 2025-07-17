@@ -14,12 +14,27 @@ header{
 
 /*main*/
 
-.btn{
-  background-color: #0d6efd;
-  color: white;
-  padding: 10px;
+.btn-card{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.button-container{
-  padding-top: 50px;
+.btn{
+  background-color: #0d6efd;
+  border: #0d6efd;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.description-card{
+  width: 800px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 25px;
 }
