@@ -1,6 +1,10 @@
+import CardFaq from "./Card"
+
 function Main () {
     return(
-        <div>ciao</div>
+        <button>
+            <CardFaq />
+        </button>
     )
     
 }
