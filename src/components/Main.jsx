@@ -3,7 +3,7 @@ import languages from "../data/languages"
 
 function Main () {
     return(
-        <div>
+        <div className="button-container">
             <CardFaq languages={languages} />
         </div>
     )
